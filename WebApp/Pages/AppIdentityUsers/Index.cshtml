@@ -1,0 +1,98 @@
+﻿@page
+@model WebApp.Pages.AppIdentityUsers.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+<h1>Index</h1>
+
+<form method="post">
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+        <!-- </snippet_Handlers> -->
+            <div class="form-group">
+                <input type="submit" asp-page-handler="Block" value="Block" class="btn btn-primary" />
+            </div>
+
+            </th>
+            <th>
+            <div class="form-group">
+                <input type="submit" asp-page-handler="Unblock" value="Unblock" class="btn btn-primary" />
+            </div>
+
+            </th>
+            <th>
+
+            <div class="form-group">
+                <input type="submit" asp-page-handler="Delete" value="Delete" class="btn btn-primary" />
+            </div>
+
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+</table>
+
+<table class="table">
+
+    <thead>
+        <tr>
+            <th>
+                <input asp-for="CheckedAll" class="checkbox" /> 
+                @if (Model.CheckedAll)
+                    {
+                        @for (int i = 0; i < Model.IsChecked.Count(); i++)
+                        {
+                            Model.IsChecked[i] = !Model.IsChecked[i];
+                        }
+                    }
+                </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AppIdentityUser[0].Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AppIdentityUser[0].UserName)
+            </th>
+             <th>
+                @Html.DisplayNameFor(model => model.AppIdentityUser[0].Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AppIdentityUser[0].PhoneNumber)
+            </th>
+            <th>
+                Blocked
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@for (var i = 0; i < Model.AppIdentityUser.Count();i++) {
+        <tr>
+            <td>
+                <input asp-for="IsChecked[i]" class="checkbox" />
+            </td>
+            <td>
+                @Model.AppIdentityUser[i].Id
+            </td>
+            <td>
+                @Model.AppIdentityUser[i].UserName
+            </td>
+            <td>
+                @Model.AppIdentityUser[i].Email
+            </td>
+            <td>
+                @Model.AppIdentityUser[i].PhoneNumber
+            </td>
+            <td>
+                @Model.AppIdentityUser[i].LockoutEnabled
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+        </form>

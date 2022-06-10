@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "TeBK9wAYupIKgneNfhgiy1fTz55OXQ6mCX6sIF0jgUCCfutBjMnp9jyBZSXq7Q79gMhn/k/YIoz+bRBhw8gSQg==",
+  "dgSpecHash": "JY9V2xBU/NpT4G4Dly5IvUOJTtvM6GEMlfjB/T1u4cWksI6MprqB5IDvJMAg4Vf2uyeXbD+XE28qjfdubam2OA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Admin\\source\\repos\\WebApp\\WebApp\\WebApp.csproj",
   "expectedPackageFiles": [
@@ -67,6 +67,7 @@
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.net.stringtools\\1.0.0\\microsoft.net.stringtools.1.0.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.netcore.targets\\1.1.3\\microsoft.netcore.targets.1.1.3.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.15.1\\microsoft.visualstudio.azure.containers.tools.targets.1.15.1.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.visualstudio.debugger.contracts\\17.2.0\\microsoft.visualstudio.debugger.contracts.17.2.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration\\6.0.5\\microsoft.visualstudio.web.codegeneration.6.0.5.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.core\\6.0.5\\microsoft.visualstudio.web.codegeneration.core.6.0.5.nupkg.sha512",

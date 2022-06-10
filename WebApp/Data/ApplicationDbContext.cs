@@ -14,11 +14,16 @@ namespace WebApp.Data
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
+            builder.Entity<Message>().Property(z => z.Id).UseIdentityColumn();
+            builder.Entity<Message>().Property(z => z.SenderName).HasMaxLength(100);
+
 
             base.OnModelCreating(builder);
         }
 
         public DbSet<AppIdentityUser> AppIdentityUser { get; set; }
+
+        public DbSet<Message> Messages { get; set; }
 
     }
 }
